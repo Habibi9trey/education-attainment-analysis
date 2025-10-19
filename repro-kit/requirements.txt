@@ -1,0 +1,12 @@
+# Core
+pandas==2.2.2
+numpy==1.26.4
+pyarrow==16.1.0
+duckdb==1.0.0
+wbgapi==1.0.12
+
+# Notebooks
+jupyter==1.0.0
+notebook==7.2.1
+ipykernel==6.29.5
+matplotlib==3.9.0

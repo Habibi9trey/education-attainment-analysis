@@ -1,0 +1,19 @@
+{
+  "name": "SSA Education (R + Python)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "postCreateCommand": "R -q -e 'if (!dir.exists(\"renv\")) renv::init(bare=TRUE)'",
+  "postStartCommand": "R -q -e 'source(\"install.R\")'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "quarto.quarto"
+      ]
+    }
+  },
+  "remoteUser": "rstudio"
+}
